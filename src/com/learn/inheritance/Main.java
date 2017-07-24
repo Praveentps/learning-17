@@ -9,6 +9,11 @@ public class Main {
 		A a = b;
 		a.show();
 		b.show();
+		System.out.println(a.x);
+		System.out.println(b.x);
+		A aa= new A();
+		aa.show();
+		System.out.println(aa.x);
 
 	}
 
