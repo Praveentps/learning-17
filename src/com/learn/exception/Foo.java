@@ -4,9 +4,10 @@ public class Foo
 {  
     public static void main(String[] args) 
     {
-        try 
-        { 
-            return; 
+        try
+        {
+            //System.exit(0);
+            return;
         } 
         finally 
         {

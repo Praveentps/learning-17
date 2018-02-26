@@ -12,4 +12,9 @@ public abstract class A {
 
 	}
 
+	public void test2() {
+		System.out.println("non-staic method of A");
+
+	}
+
 }

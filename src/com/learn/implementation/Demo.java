@@ -16,11 +16,11 @@ interface Example3 extends Example1, Example2  {
 
 class Example4 implements Example3 {
 	public void display1() {
-		System.out.println("display2 method");
+		System.out.println("display1 method");
 	}
 
 	public void display2() {
-		System.out.println("display3 method");
+		System.out.println("display2 method");
 	}
 }
 
@@ -29,5 +29,6 @@ class Demo {
 		Example4 obj = new Example4();
 		
 		obj.display1();
+		obj.display2();
 	}
 }

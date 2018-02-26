@@ -21,6 +21,7 @@ public static void main(String[] args) {
 	String endDate=format.format(date); 
 	//System.out.println("srt"+startDate);
 	System.out.println("end"+endDate);
+		System.out.println(Math.random());
 	}
 }
 }

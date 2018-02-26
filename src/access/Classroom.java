@@ -5,7 +5,7 @@
  LENGTH = 10;
  }
  public static void swing() {
- System.out.print("swing ");
+ System.out.println("swing ");
  }
  
  }

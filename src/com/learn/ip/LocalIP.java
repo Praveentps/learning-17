@@ -13,7 +13,6 @@ public class LocalIP {
 			String host=ip.getHostName();
 			System.out.println(ip);
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
         

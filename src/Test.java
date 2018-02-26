@@ -4,12 +4,22 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int array[]={14,26,29,10,13,13,13,11,12,25,21,12,15,37,19,42,17,18,34,23};
-		int length=array.length;
-		System.out.println(length);
-		Arrays.sort(array);
-		System.out.println(array[18]);
+	String buyListPath="/tesco-now/buyListGroup/buyList";
+		String[] buyListPaths = buyListPath.split("/", 5);
+            /* buyList path is constructed as below
+            /tenant/buyListGroup/buyList/segment
+            */
+		int startIndex=0;
+            if(buyListPaths.length>2&&buyListPaths[1].equalsIgnoreCase("TESCO-NOW")) {
+            	startIndex=2;
+			}
+
+		for (int i = startIndex; i < buyListPaths.length; i++) {
+			System.out.println(i+":"+buyListPaths[i]);
+
+		}
+
+
 	}
 
 }

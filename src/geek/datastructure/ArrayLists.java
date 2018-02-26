@@ -8,7 +8,7 @@ public class ArrayLists {
 		Scanner scanner = new Scanner(System.in);
 		int t = scanner.nextInt();
 		scanner.nextLine();
-		ArrayList<String> list = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList<>();
 		for (int i = 0; i < t; i++) {
 			list.add(scanner.nextLine());
 		}
