@@ -5,13 +5,22 @@ public class Main {
 		try {
 			int data = 25 / 0;
 			System.out.println(data);
-		} catch (NullPointerException e) {
+
+		}
+		catch (NumberFormatException e){
+			e.printStackTrace();
+		}
+
+		catch (NullPointerException e) {
 			System.out.println(e);
 			return;
 		}catch (ArithmeticException e){
 			System.out.println(e.getMessage());
 			System.out.println("ArithmeticException");
 			return;
+		}
+		catch (Exception e){
+			e.printStackTrace();
 		}finally {
 			System.out.println("finally block is always executed");
 		}
